@@ -100,6 +100,10 @@ footer {
     padding-left: 1rem;
     padding-right: 1rem;
 }
-footer img {
+footer img{
     transform: scale(0.5);
+}
+
+.not_little *{
+    transform: scale(1);
 }
