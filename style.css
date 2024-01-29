@@ -71,11 +71,19 @@ nav>ul>li>ul>li>a>ul>li:first-child{
 
 .main_img {
     position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./images/big_acc.png");
 }
+
+.main_img>img { opacity: 0;}
 
 .main_img>h1 {
     color: white;
     position: absolute;
+    font-size: 2em;
+    top : 45%;
+    left: 20%;
 }
 
 .cards {
