@@ -1,9 +1,13 @@
+/* ############### */
+/*      GENERAL    */
+/* ############### */
+
 :root {
-    --text: #130d06;
-    --background: #faead6;
-    --primary: #ff9f0f;
-    --secondary: #9aff60;
-    --accent: #149f14;
+    --text: #BFA181;
+    --background: #0c233d;
+    --primary: #178582;
+    --secondary: #825628;
+    --accent: #db9345;
 }
 
 *{text-align: center; color: var(--text);}
@@ -14,17 +18,24 @@ a { text-decoration: none;}
 .accent {background-color: var(--accent);}
 .rounded_corners {border-radius: 3em;}
 .flex {display: flex;}
+.pad_top {padding-top: 1em;}
+.pad_bot {padding-bottom: 1em;}
+.zmargin {margin: 0;}
 
-.center_parent {
+.center_abs_parent {
     position: relative;
 }
 
-.center {
+.center_abs {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* ############### */
+/*      HEADER     */
+/* ############### */
 
 body {
     width: 97vw;
@@ -36,6 +47,7 @@ body {
 nav ul {
     list-style-type: none;
     padding-inline-start: 0px;
+    margin: 0;
 }
 
 nav img {
@@ -44,8 +56,6 @@ nav img {
 }
 
 nav>ul {
-    padding-top: 1em;
-    padding-bottom: 1em;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
@@ -68,13 +78,25 @@ nav>ul>li>ul>li>a>ul>li:first-child{
     flex-grow: 1;
 }
 
+/* ############### */
+/*      MAIN       */
+/* ############### */
+
 .main_img {
     position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./images/big_acc.png");
 }
+
+.main_img>img { opacity: 0;}
 
 .main_img>h1 {
     color: white;
     position: absolute;
+    font-size: 2em;
+    top : 45%;
+    left: 20%;
 }
 
 .cards {
@@ -100,15 +122,6 @@ footer {
     padding-left: 1rem;
     padding-right: 1rem;
 }
-footer img{
-    transform: scale(0.5);
-}
-
-.not_little *{
-    transform: scale(1);
-}
-
-
 
 .carousel-items {
     display: flex;
@@ -138,3 +151,17 @@ footer img{
     width: 50%;
 }
 
+/* ############### */
+/*      FOOTER     */
+/* ############### */
+
+footer img{
+    height: 100%;
+    transform: scale(0.5);
+}
+
+.not_little *{
+    transform: scale(1);
+}
+
+.footer_margin { margin: 0.5em;}
