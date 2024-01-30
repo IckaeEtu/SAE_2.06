@@ -1,10 +1,15 @@
 :root {
-    --text: #130d06;
-    --background: #faead6;
-    --primary: #ff9f0f;
-    --secondary: #9aff60;
-    --accent: #149f14;
+    --text: #BFA181;
+    --background: #0c233d;
+    --primary: #178582;
+    --secondary: #825628;
+    --accent: #db9345;
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Roboto&display=swap');
+
+
 
 *{text-align: center; color: var(--text);}
 a { text-decoration: none;}
@@ -27,6 +32,7 @@ a { text-decoration: none;}
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
     width: 97vw;
     height: 100%;
     padding-left: 1em;
@@ -88,9 +94,6 @@ nav>ul>li>ul>li>a>ul>li:first-child{
     list-style-type: none;
     border-radius: 3em;
     background-color: var(--accent);
-    padding-bottom: 10%;
-    flex-grow: 1;
-    margin: 5%;
 }
 
 .cards >*>ul {
@@ -110,3 +113,34 @@ footer img{
 .not_little *{
     transform: scale(1);
 }
+
+
+
+.carousel-items {
+    display: flex;
+    overflow: scroll ;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+    flex: 1 0 100%;
+    margin-left: 1rem;
+    scroll-snap-align: start;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-grow: 0;
+}
+
+.carousel-item ul {
+    padding: 0;
+}
+
+.carousel-item section {
+    width:  50%;
+}
+
+.carousel-item img {
+    width: 50%;
+}
+

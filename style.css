@@ -21,8 +21,8 @@ a {    text-decoration: none;}
 .accent {background-color: var(--accent);}
 .rounded_corners {border-radius: 3em;}
 .flex {display: flex;}
-.pad_top {padding-top: 1em;}
-.pad_bot {padding-bottom: 1em;}
+.pad_top {padding-top: 0.5em;}
+.pad_bot {padding-bottom: 0.5em;}
 .zmargin {margin: 0;}
 
 .center_abs_parent {position: relative;}
