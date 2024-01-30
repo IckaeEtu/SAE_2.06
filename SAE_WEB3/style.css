@@ -1,0 +1,267 @@
+/* ############### */
+/*      GENERAL    */
+/* ############### */
+
+:root {
+    --text: #BFA181;
+    --background: #0c233d;
+    --primary: #178582;
+    --secondary: #825628;
+    --accent: #db9345;
+}
+
+* {
+    text-align: center;
+    color: var(--text);
+}
+a {    text-decoration: none;}
+.background {background-color: var(--background);}
+.primary {background-color: var(--background);}
+.secondary {background-color: var(--secondary);}
+.accent {background-color: var(--accent);}
+.rounded_corners {border-radius: 3em;}
+.flex {display: flex;}
+.pad_top {padding-top: 1em;}
+.pad_bot {padding-bottom: 1em;}
+.zmargin {margin: 0;}
+
+.center_abs_parent {position: relative;}
+.center_abs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ############### */
+/*      HEADER     */
+/* ############### */
+
+body {
+    width: 97vw;
+    height: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+    margin: 0;
+}
+
+nav img {
+    max-height: 5em;
+    display: inline-block;
+}
+
+nav>ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+nav>ul>li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav>ul>li>ul>li>a>ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav>ul>li>ul>li>a>ul>li:first-child {
+    padding-right: 1em;
+    flex-grow: 1;
+}
+
+/* ############### */
+/*      MAIN       */
+/* ############### */
+.main_img {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./images/big_acc.png");
+}
+
+.main_img>img {
+    opacity: 0;
+}
+
+.main_img>h1 {
+    color: white;
+    position: absolute;
+    font-size: 2em;
+    top: 45%;
+    left: 20%;
+}
+
+/* ############### */
+/*      CARD       */
+/* ############### */
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.cards>* {
+    list-style-type: none;
+    border-radius: 3em;
+    background-color: var(--accent);
+}
+
+.cards>*>ul {
+    list-style-type: none;
+}
+
+/* ############### */
+/*     CAROUSEL    */
+/* ############### */
+
+.carousel-items {
+    display: flex;
+    overflow: scroll;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+    flex: 1 0 100%;
+    margin-left: 1rem;
+    scroll-snap-align: start;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-grow: 0;
+}
+
+.carousel-item ul {
+    padding: 0;
+}
+
+.carousel-item section {
+    width: 50%;
+}
+
+.carousel-item img {
+    width: 50%;
+}
+
+/* ############### */
+/*      CIRCLE     */
+/* ############### */
+
+.circle {
+    z-index: -1;
+    position: absolute;
+    border: 1px solid var(--accent);
+    border-radius: 98%;
+    animation: spin 15s linear 0s infinite reverse
+}
+
+
+.circle-1 {
+    top: 150px;
+    margin-left: -180px;
+    width: 627px;
+
+    transform-origin: 40% 50% 0;
+
+    height: 627px;
+}
+
+.circle-2 {
+    top: 340px;
+    margin-right: 130px;
+    width: 440px;
+    transform-origin: 40% 50% 0;
+
+    height: 440px;
+}
+
+.circle-3 {
+    top: 250px;
+    margin-left: 50px;
+    width: 627px;
+    transform-origin: 30% 40% 0;
+    height: 627px;
+}
+
+.circle-4 {
+    top: 300px;
+    margin-left: 121px;
+    width: 188px;
+    transform-origin: 65% 60% 0;
+    height: 188px;
+}
+
+.circle-5 {
+    top: 250px;
+    width: 406px;
+    transform-origin: 75% 50% 0;
+    height: 406px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+/* ############### */
+/*      FOOTER     */
+/* ############### */
+
+élément {
+	z-index: 1000;
+}
+
+.divider {
+    position:absolute;
+    left:0;
+    right:0;
+    margin:0 auto;
+    height:3px;
+    background-color:#deb992;
+    animation:full-width 2s;
+    z-index:1004
+}
+
+@keyframes full-width {
+    0% {
+      width:0
+    }
+    to {
+      width:100%
+    }
+  }
+
+footer {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+footer img {
+    height: 100%;
+    transform: scale(0.5);
+}
+
+.not_little * {
+    transform: scale(1);
+}
+
+.footer_margin {
+    margin: 0.5em;
+}
