@@ -238,6 +238,6 @@ footer img {
     transform: scale(1);
 }
 
-.footer_margin {
+.footer_margin>li>h4{
     margin: 0.5em;
 }
