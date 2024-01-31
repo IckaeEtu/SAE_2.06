@@ -74,6 +74,7 @@ a {
 /* ############### */
 
 body {
+    overflow-x: hidden;
     width: 97vw;
     height: 100%;
     padding-left: 1em;
@@ -141,21 +142,22 @@ nav>ul>li>ul>li>a>ul>li:first-child {
     position: absolute;
     left: 0;
     right: 0;
+    width: 85%;
     margin: 0 auto;
     height: 3.5px;
     background-color: #deb992;
-    animation: full-width 2s;
+    animation: divider_animation 2s;
     z-index: 999;
 }
 
 
-@keyframes full-width {
+@keyframes divider_animation {
     0% {
         width: 0
     }
 
     to {
-        width: 100%
+        width: 85%
     }
 }
 
