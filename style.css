@@ -82,6 +82,7 @@ nav>ul>li>ul>li>a>ul>li:first-child {
 /*      MAIN       */
 /* ############### */
 .main_img {
+    margin-top: 2em;
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
