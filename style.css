@@ -276,6 +276,29 @@ footer img {
     transform: scale(0.5);
 }
 
+footer>ul {
+    display:flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    gap: 2em;
+    
+}
+
+footer>li {
+    display:flex;
+    flex-wrap: wrap;
+    height: 4em;
+}
+
+
+footer>ul>li>ul {
+    list-style-type: none;
+    padding-top: 5%;
+}
+
+
+
 .not_little * {
     transform: scale(1);
 }
@@ -283,3 +306,5 @@ footer img {
 .footer_margin>li>h4 {
     margin: 0.5em;
 }
+
+
