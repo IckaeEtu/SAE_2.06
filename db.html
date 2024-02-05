@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>R2.06 site métiers</title>
+  <title>R2.06 - Data</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -12,7 +12,7 @@
   <header>
     <nav>
       <ul>
-          <li><a href="index.html"><img src="./images/icon_home.svg" alt="icon home"> Acceuil</a></li>
+          <li><a href="index.html"><img src="./images/icon_home.svg" alt="icon home"> Accueil</a></li>
           <li><a href="app.html"><img src="./images/icon_code.svg" alt="icon logiciel"> Les métiers du logiciel</a></li>
           <li><a href="db.html"><img src="./images/icon_data.svg" alt="icon data"> Les métiers de la data</a></li>
           <li><a href="web.html"><img src="./images/icon_web.svg" alt="icon web"> Les métiers du web</a></li>
@@ -37,39 +37,64 @@
       <div>
         <h1>centre d'intérêt generale: Manier les chiffres Travailler avec les nouvelles technologies</h1>
       </div>
+
       <article id="cards">
-        <div class="card">
-            <h5>Développeur logiciel</h5>
+        <a href="#card_1" class="card">
+            <h2>Développeur logiciel</h2>
+            <img src="./images/DevLogiciel.jpg" alt="dev logiciel">
             <section>
                 <ul>
-                    <li>Salaire</li>
-                    <li>Desc</li>
+                    <li><p>Participe au développement de logiciel</p></li>
+                    <li>
+                      <ul>
+                        <h4>Salaire</h4>
+                        <li><b>Junior</b>: 30k ~ 45k€ annuel</li>
+                        <li><b>Senior</b>: 50k ~ 65k€ annuel</li>
+                      </ul>
+                    </li>
                 </ul>
             </section>
-        </div>
-        <div class="card">
-            <h5>Développeur logiciel</h5>
-            <section>
-                <ul>
-                    <li>Salaire</li>
-                    <li>Desc</li>
-                </ul>
-            </section>
-        </div>
-        <div class="card">
-            <h5>Développeur logiciel</h5>
-            <section>
-                <ul>
-                    <li>Salaire</li>
-                    <li>Desc</li>
-                </ul>
-            </section>
-        </div>
+          </a>
+
+        <a href="#card_2" class="card">
+          <h2>Ingénieur en programmation linguistique</h2>
+          <img src="./images/DevLinguistique.jpg" alt="dev linguiste">
+          <section>
+              <ul>
+                  <li><p>Participe au développement de logiciel</p></li>
+                  <li>
+                    <ul>
+                      <h4>Salaire</h4>
+                      <li><b>Junior</b>: 30k ~ 45k€ annuel</li>
+                      <li><b>Senior</b>: 50k ~ 65k€ annuel</li>
+                    </ul>
+                  </li>
+              </ul>
+          </section>
+          </a>
+
+        <a href="#card_3" class="card">
+          <h2>Ingénieur R&D</h2>
+          <img src="./images/DevRechercheDev.jpg" alt="dev RechercheDev">
+          <section>
+              <ul>
+                  <li><p>Participe au développement de logiciel</p></li>
+                  <li>
+                    <ul>
+                      <h4>Salaire</h4>
+                      <li><b>Junior</b>: 30k ~ 45k€ annuel</li>
+                      <li><b>Senior</b>: 50k ~ 65k€ annuel</li>
+                    </ul>
+                  </li>
+              </ul>
+          </section>
+          </a>
     </article>
     </section>
     <section class="carousel">
       <ul class="carousel-items">
-        <li class="carousel-item">
+
+        <li class="carousel-item" id="card_1">
           <section>
             <h3>Développeur Informatique</h3>
             <p>Le développeur logiciel participe à la création de divers logiciels,
@@ -84,7 +109,8 @@
           </section>
           <img src="./images/fond_app.png" alt="img_app">
         </li>
-        <li class="carousel-item">
+
+        <li class="carousel-item" id="card_2">
           <section>
             <h3>Développeur Informatique</h3>
             <p>Le développeur logiciel participe à la création de divers logiciels,
@@ -99,7 +125,8 @@
           </section>
           <img src="./images/fond_app.png" alt="img_app">
         </li>
-        <li class="carousel-item">
+
+        <li class="carousel-item" id="card_3">
           <section>
             <h3>Développeur Informatique</h3>
             <p>Le développeur logiciel participe à la création de divers logiciels,
@@ -140,19 +167,22 @@
           <img style="height: 4em;" src="./images/logo_creat.png" alt="./images/logo_creat.png" />
         </li>
         <li>
-          <h1 class="zmargin pad_top">Créateurs</h1>
+          <h3 class="footer_margin">Créateurs :</h3>
         </li>
         <li>
-          <h4 class="footer_margin">Mickael Riego</h4>
+          <h3 class="footer_margin">Mickael Riego</h3>
         </li>
         <li>
-          <h4 class="footer_margin">Pavard Arthur</h4>
+          <h3 class="footer_margin">Pavard Arthur</h3>
         </li>
         <li>
-          <h4 class="footer_margin">Yasin Keskin</h4>
+          <h3 class="footer_margin">Yasin Keskin</h3>
         </li>
         <li>
-          <ul>
+          <ul style="padding: 0;">
+            <li>
+              <a href="Source.html" class="footer_margin"><h3 style="text-decoration: underline;">Sources</h3></a>
+            </li>
             <li class="not_little">
               <img src="./images/logo_info_quadri.png" alt="./images/logo_info_quadri.png" />
               <img src="./images/logo_univ_orleans.png" alt="./images/logo_univ_orleans.png" />
