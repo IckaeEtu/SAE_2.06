@@ -137,6 +137,13 @@ nav ul {
 #blabla {
     background-color: var(--background);
     border-radius: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#blabla h1 {
+    flex-basis: 100%;
 }
 
 #blabla p {
@@ -160,16 +167,26 @@ nav ul {
 }   
 
 #cards a img {
-    height: 25%;
+    object-fit: cover;
+    width: 25vw;
+    height: 50vh;
 }
 
 #cards a {
     background-color: #254B5A;
     flex-grow: 0;
-    border-radius: 5%;
+    border: var(--accent);
+    border-style: solid;
     width: 25vw;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.377) ;
+    height: 75vh;
+    overflow: auto;
 }
 
+#cards a:hover{
+    transform: scale(1.025);
+    transition: 0.3s;
+}
 
 
 /* ############### */
