@@ -355,7 +355,9 @@ footer>ul>li>ul {
     display: flex;
 }
 
-footer_little_fix
+.footer_little_fix {
+    
+}
 
 .not_little * {
     transform: scale(1);
