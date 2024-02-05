@@ -7,8 +7,8 @@
 :root {
     --text: #BFA181;
     --background: #0c233d;
-    --primary: #178582;
-    --secondary: #825628;
+    --primary: #546A7B;
+    --secondary: #546A7B;
     --accent: #db9345;
 }
 
@@ -87,6 +87,37 @@ nav ul {
     margin: 0;
 }
 
+.BarreP>li>a {
+    cursor: pointer;
+    transition: 0.4s all ease;
+}
+
+.BarreP>li>a:hover{
+    color:#cdcdcd;
+    transition: 0.4s all ease;
+    text-decoration: underline;
+}
+
+.BarreP>li>a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #6c9329;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+
+.BarreP>li>a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
 nav img {
     max-height: 5em;
     display: inline-block;
@@ -96,6 +127,7 @@ nav>ul {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
+    padding-bottom: 2%;
 }
 
 nav>ul>li {
@@ -103,6 +135,7 @@ nav>ul>li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 nav>ul>li>ul>li>a>ul {
@@ -314,9 +347,15 @@ footer>li {
 footer>ul>li>ul {
     list-style-type: none;
     padding-top: 5%;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
+.not_little{
+    display: flex;
+}
 
+footer_little_fix
 
 .not_little * {
     transform: scale(1);
