@@ -134,18 +134,18 @@ nav ul {
     }
 }
 
-#blabla {
+#texte_explication {
     border-radius: 3%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-#blabla h1 {
+#texte_explication h1 {
     flex-basis: 100%;
 }
 
-#blabla p {
+#texte_explication p {
     width: 50%;
 }
 
@@ -156,13 +156,12 @@ nav ul {
     display: flex;
     flex-basis: 15vw;
     justify-content: space-around;
-
-
 }
 
 #cards a *{
     list-style-type: none;
     padding: 0;
+    overflow: hidden;
 }   
 
 #cards a img {
