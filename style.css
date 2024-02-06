@@ -143,7 +143,6 @@ nav ul {
 }
 
 #blabla {
-    background-color: var(--background);
     border-radius: 3%;
     display: flex;
     flex-wrap: wrap;
