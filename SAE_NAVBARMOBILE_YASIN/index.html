@@ -10,7 +10,9 @@
 
 <body class="background">
   <header>
-    <nav>
+    <nav id='menu'>
+      <input type='checkbox' id='responsive-menu'>
+      <label for="responsive-menu" onclick='updatemenu(event)'></label>
       <ul>
         <li><a href="index.html"><img src="./images/icon_home.svg" alt="icon home"> Accueil</a></li>
         <li><a href="app.html"><img src="./images/icon_code.svg" alt="icon logiciel"> Les métiers du logiciel</a></li>

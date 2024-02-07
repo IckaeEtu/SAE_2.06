@@ -2,24 +2,26 @@
 <html lang="fr">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
   <title>R2.06 - Web</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body class="background">
   <header>
     <nav>
       <ul>
-          <li><a href="index.html"><img src="./images/icon_home.svg" alt="icon home"> Accueil</a></li>
-          <li><a href="app.html"><img src="./images/icon_code.svg" alt="icon logiciel"> Les métiers du logiciel</a></li>
-          <li><a href="db.html"><img src="./images/icon_data.svg" alt="icon data"> Les métiers de la data</a></li>
-          <li><a href="web.html"><img src="./images/icon_web.svg" alt="icon web"> Les métiers du web</a></li>
+        <li><a href="index.html"><img src="./images/icon_home.svg" alt="icon home"> Accueil</a></li>
+        <li><a href="app.html"><img src="./images/icon_code.svg" alt="icon logiciel"> Les métiers du logiciel</a></li>
+        <li><a href="db.html"><img src="./images/icon_data.svg" alt="icon data"> Les métiers de la data</a></li>
+        <li><a href="web.html"><img src="./images/icon_web.svg" alt="icon web"> Les métiers du web</a></li>
       </ul>
-  </nav>
+    </nav>
     <div class="divider"></div>
   </header>
+
+  <script src="script.js"></script>
 
   <main>
     <div class="circle-group">
@@ -29,10 +31,12 @@
       <div class="circle circle-4"></div>
       <div class="circle circle-5"></div>
     </div>
+
     <div class="main_img">
       <h1>IUT Orléans</h1>
       <img src="./images/big_acc.png" alt="./images/big_acc.png" />
     </div>
+
     <section>
       <div>
         <h1>centre d'intérêt generale: Manier les chiffres Travailler avec les nouvelles technologies</h1>
@@ -52,8 +56,10 @@
                       </ul>
                     </li>
                 </ul>
-            </section>
-          </a>
+              </li>
+            </ul>
+          </section>
+        </a>
 
         <a href="#card_2" class="card">
           <h2>Développeur multimédia</h2>
@@ -69,7 +75,7 @@
                   </li>
               </ul>
           </section>
-          </a>
+        </a>
 
         <a href="#card_3" class="card">
           <h2>Dev front-end</h2>
@@ -86,8 +92,45 @@
                   </li>
               </ul>
           </section>
-          </a>
-    </article>
+        </a>
+      </article>
+
+      <article>
+        <ul class="slide_holder">
+          <li class="slide_arrow">
+            <a onclick="change_slider(-1);">
+              <p>&larr;</p>
+            </a>
+          </li>
+          <li class="slide_container">
+            <div class="slides">
+              <div id="slide_1">
+                <ul>
+                  <li>
+                    <p>1</p>
+                  </li>
+                  <li>
+                    <p>2</p>
+                  </li>
+                  <li>
+                    <p>3</p>
+                  </li>
+                </ul>
+              </div>
+              <div id="slide_2">
+                2
+              </div>
+              <div id="slide_2">
+                3
+              </div>
+          </li>
+          <li class="slide_arrow">
+            <a onclick="change_slider(1);">
+              <p>&rarr;</p>
+            </a>
+          </li>
+        </ul>
+      </article>
     </section>
     <section class="carousel">
       <ul class="carousel-items">
@@ -160,35 +203,28 @@
 
   <footer>
     <div class="divider"></div>
-      <ul style="display: flex; flex-wrap: wrap;">
-        <li>
-          <img style="height: 4em;" src="./images/logo_creat.png" alt="./images/logo_creat.png" />
-        </li>
-        <li>
-          <h3 class="footer_margin">Créateurs :</h3>
-        </li>
-        <li>
-          <h3 class="footer_margin">Mickael Riego</h3>
-        </li>
-        <li>
-          <h3 class="footer_margin">Pavard Arthur</h3>
-        </li>
-        <li>
-          <h3 class="footer_margin">Yasin Keskin</h3>
-        </li>
-        <li>
-          <ul style="padding: 0;">
-            <li>
-              <a href="Source.html" class="footer_margin"><h3 style="text-decoration: underline;">Sources</h3></a>
-            </li>
-            <li class="not_little">
-              <img src="./images/logo_info_quadri.png" alt="./images/logo_info_quadri.png" />
-              <img src="./images/logo_univ_orleans.png" alt="./images/logo_univ_orleans.png" />
-            </li>
-          </ul>
-        </li>
-      </ul>
+    <ul>
+      <li>
+        <img style="height: 4em;" src="./images/logo_creat.png" alt="./images/logo_creat.png" />
+      </li>
+      <li>Créateurs :</li>
+      <li>Mickael Riego</li>
+      <li>Pavard Arthur</li>
+      <li>Yasin Keskin</li>
+      <li>
+        <ul class="zpadding">
+          <li>
+            <a href="Source.html">
+              <h3 class="underline">Sources</h3>
+            </a>
+          </li>
+          <li class="not_little">
+            <img src="./images/logo_info_quadri.png" alt="./images/logo_info_quadri.png" />
+            <img src="./images/logo_univ_orleans.png" alt="./images/logo_univ_orleans.png" />
+          </li>
+        </ul>
+      </li>
+    </ul>
   </footer>
 </body>
-
 </html>

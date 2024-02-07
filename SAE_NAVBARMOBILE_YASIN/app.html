@@ -4,13 +4,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>R2.06 - Data</title>
+  <title>R2.06 - Logiciel</title>
   <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body class="background">
   <header>
-    <nav>
+    <nav id='menu'>
+      <input type='checkbox' id='responsive-menu'>
+      <label for="responsive-menu" onclick='updatemenu(event)'></label>
       <ul>
         <li><a href="index.html"><img src="./images/icon_home.svg" alt="icon home"> Accueil</a></li>
         <li><a href="app.html"><img src="./images/icon_code.svg" alt="icon logiciel"> Les métiers du logiciel</a></li>
@@ -20,7 +22,6 @@
     </nav>
     <div class="divider"></div>
   </header>
-
   <script src="script.js"></script>
 
   <main>
@@ -36,26 +37,24 @@
       <h1>IUT Orléans</h1>
       <img src="./images/big_acc.png" alt="./images/big_acc.png" />
     </div>
-  
+
     <section>
-      <div>
-        <h1>centre d'intérêt generale: Manier les chiffres Travailler avec les nouvelles technologies</h1>
-      </div>
+      <h1>centre d'intérêt generale: Manier les chiffres Travailler avec les nouvelles technologies</h1>
 
       <article id="cards">
         <a href="#card_1" class="card">
-            <h2>Administrateur base de données</h2>
-            <img src="./images/Admin_BD.png" alt="admin bd">
-            <section>
+          <h2>Développeur logiciel</h2>
+          <img src="./images/DevLogiciel.jpg" alt="dev logiciel">
+          <section>
+            <ul>
+              <li>
+                <p>Participe au développement de logiciel</p>
+              </li>
+              <li>
                 <ul>
-                    <li><p>Gère et sécurise les données inforamtiques</p></li>
-                    <li>
-                      <ul>
-                        <h4>Salaire</h4>
-                        <li><b>Junior</b>: 24k ~ 30k€ annuel</li>
-                        <li><b>Senior</b>: 40k ~ 45k€ annuel</li>
-                      </ul>
-                    </li>
+                  <h4>Salaire</h4>
+                  <li><b>Junior</b>: 30k ~ 45k€ annuel</li>
+                  <li><b>Senior</b>: 50k ~ 65k€ annuel</li>
                 </ul>
               </li>
             </ul>
@@ -63,35 +62,40 @@
         </a>
 
         <a href="#card_2" class="card">
-          <h2>Architecte Big Data</h2>
-          <img src="./images/architecte-big-data.webp" alt="archi bd">
+          <h2>Ingénieur en programmation linguistique</h2>
+          <img src="./images/DevLinguistique.jpg" alt="dev linguiste">
           <section>
-              <ul>
-                  <li><p>Conçoit des systèmes pour traiter de grands volumes de données</p></li>
-                  <li>
-                    <ul>
-                      <h4>Salaire</h4>
-                      <li><b>Junior</b>: 30k ~ 45k€ annuel</li>
-                    </ul>
-                  </li>
-              </ul>
+            <ul>
+              <li>
+                <p>Conçoit des logiciels de traitement et rédaction de texte automatique</p>
+              </li>
+              <li>
+                <ul>
+                  <h4>Salaire</h4>
+                  <li><b>Junior</b>: 33k ~ 43k€ brut annuel</li>
+                </ul>
+              </li>
+            </ul>
           </section>
         </a>
 
         <a href="#card_3" class="card">
-          <h2>Data Analyst</h2>
-          <img src="./images/Dataanaylst.png" alt="data analyst">
+          <h2>Ingénieur R&D</h2>
+          <img src="./images/DevRechercheDev.jpg" alt="dev RechercheDev">
           <section>
-              <ul>
-                  <li><p>Analyse de grands volumes de données pour aider les entreprises</p></li>
-                  <li>
-                    <ul>
-                      <h4>Salaire</h4>
-                      <li><b>Junior</b>: 35k ~ 38k€ annuel</li>
-                      <li><b>Senior</b>: 45k ~ 55k€ annuel</li>
-                    </ul>
-                  </li>
-              </ul>
+            <ul>
+              <li>
+                <p>Recherche et innove afin de répondre aux besoins futur</p>
+              </li>
+              <li>
+                <ul>
+                  <h4>Salaire</h4>
+                  <li>Junior : entre 40K et 50K€ (brut annuel)</li>
+                  <li>Senior(expert) : entre 50K et 90K€ (brut annuel)</li>
+
+                </ul>
+              </li>
+            </ul>
           </section>
         </a>
       </article>
@@ -133,42 +137,55 @@
         </ul>
       </article>
     </section>
+
     <section class="carousel">
       <ul class="carousel-items">
 
-        <li class="carousel-item" id="card_1">
+        <li class="carousel-item">
           <section>
             <h3>Développeur Informatique</h3>
             <p>Le développeur logiciel participe à la création de divers logiciels,
               donc il doit toujours apprendre. Il prend en charge la conception d’un programme depuis le cahier des
               charges, jusqu'au déploiement.</p>
             <ul>
-              <h4>Outils utilisés</h4>
+              <h4>Outils utilisés: </h4>
               <li>Python</li>
               <li>Java</li>
               <li>C</li>
+            </ul>
+            <ul>
+              <h4>Etudes: </h4>
+              <li>niveau bac + 2: BTS Informatique </li>
+              <li>niveau bac + 3: BUT Informatique</li>
+              <li>niveau bac + 5: Master/Ingénieur Informatique</li>
+
             </ul>
           </section>
           <img src="./images/fond_app.png" alt="img_app">
         </li>
 
-        <li class="carousel-item" id="card_2">
+        <li class="carousel-item">
           <section>
-            <h3>Développeur Informatique</h3>
-            <p>Le développeur logiciel participe à la création de divers logiciels,
-              donc il doit toujours apprendre. Il prend en charge la conception d’un programme depuis le cahier des
-              charges, jusqu'au déploiement.</p>
+            <h3>Ingénieur en programmation linguistique</h3>
+            <p>L’ingénieur en programmation linguistique conçoit et paramètre des logiciels de traitement et rédaction
+              de texte automatique.
+              <br>Il doit maîtriser sa langue de travail et différents langage de programmation (Java, Python, C)
+            </p>
             <ul>
               <h4>Outils utilisés</h4>
               <li>Python</li>
               <li>Java</li>
               <li>C</li>
             </ul>
+            <ul>
+              <h4>Etudes: </h4>
+              <li>niveau bac + 5: Master/Ingénieur Informatique</li>
+            </ul>
           </section>
-          <img src="./images/fond_app.png" alt="img_app">
+          <img src="./images/DevLinguistique.jpg" alt="img_app">
         </li>
 
-        <li class="carousel-item" id="card_3">
+        <li class="carousel-item">
           <section>
             <h3>Développeur Informatique</h3>
             <p>Le développeur logiciel participe à la création de divers logiciels,
@@ -228,4 +245,5 @@
     </ul>
   </footer>
 </body>
+
 </html>
